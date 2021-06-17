@@ -1,3 +1,5 @@
+"use strict"; 
+
 
 document.getElementById('nav_profile').addEventListener('click', function(){
     document.querySelector('.Profile_header').scrollIntoView({

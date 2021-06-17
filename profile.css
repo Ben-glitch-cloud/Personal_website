@@ -23,7 +23,7 @@ header h1 {
 /* nav bar in here */ 
 
 nav {
-    width: 100%; 
+    width: 97%; 
     height: 110px;
     display: flex; 
     justify-content: center;
@@ -70,12 +70,12 @@ nav ul li {
     justify-content: center;
     align-items: center;  
     width: 100%;
-    height: 30px; 
+    height: 30px;  
 } 
 
 .Profile_header h2 {
     font-size: 30px; 
-    letter-spacing: 4px; 
+    letter-spacing: 4px;  
     font-family: 'Source Sans Pro', sans-serif; 
 }
 
@@ -88,7 +88,7 @@ nav ul li {
 } 
 
 .main_profile p { 
-    width: 40%;
+    width: 55%;
     text-align: justify; 
     font-family: 'Source Sans Pro', sans-serif;  
     line-height: 25px; 
@@ -97,7 +97,9 @@ nav ul li {
 .main_profile img {
     width: 14%; 
     margin-right: 50px;
-}
+} 
+
+
 
 /* soical media  */ 
 
@@ -106,7 +108,8 @@ nav ul li {
     height: 60px;
     display: flex; 
     justify-content: center; 
-    align-items: center;
+    align-items: center; 
+    
 } 
 
 .More_info ul {
@@ -116,12 +119,13 @@ nav ul li {
 .More_info ul li {
     padding: 0px 30px; 
     list-style: none; 
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;   
+    letter-spacing: 2px;
 }  
 
 #soical_link { 
     color: black;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 #soical_link:hover {
@@ -137,7 +141,8 @@ nav ul li {
     align-items: center;  
     width: 100%;
     height: 30px; 
-    margin-top: 120px;
+    margin-top: 120px; 
+    margin-bottom: 90px;
 } 
 
 .work_header h2 {
@@ -156,7 +161,7 @@ nav ul li {
     flex-wrap: nowrap;  
     margin-top: 40px; 
    align-items: center;
-}  
+}   
 
 .work_item_one p {
     margin: 0;
@@ -179,7 +184,12 @@ nav ul li {
     height: 30px; 
     margin-top: 120px;
 
-} 
+}  
+
+#surrey {
+    width: 230px;
+    height: 190px;
+}
 
 .Education_header h2 {
     font-size: 30px; 
@@ -357,7 +367,7 @@ nav ul li {
 .end_item ul li {
     padding: 0px 20px; 
     list-style: none;   
-    letter-spacing: 2px;
+    letter-spacing: 2px; 
 } 
 
 .end_item ul a {

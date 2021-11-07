@@ -59,7 +59,55 @@ nav ul li {
 
 #nav_hobbies:hover{
     color: pink;
+} 
+
+/* second nav bar  */ 
+
+#nav_profile_2:hover {
+    color: pink;
+} 
+
+#nav_work_2:hover {
+    color: pink;
+} 
+
+#nav_education_2:hover{
+    color: pink;
+} 
+
+#nav_projects_2:hover{
+    color: pink;
+} 
+
+#nav_hobbies_2:hover{
+    color: pink;
 }
+
+/* second nav */
+
+#second_nav 
+{
+    width: 97%; 
+    height: 90px;
+    display: none; 
+    position: fixed; 
+    top: 0px;
+    background-color: white;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;  
+} 
+
+#second_nav ul li {
+    text-decoration: none; 
+    display: inline; 
+    padding: 0 10px; 
+    margin: 0 10px; 
+    font-family: 'Source Sans Pro', sans-serif;  
+    letter-spacing: 2px;
+} 
+
 
 /* Main page of content  */ 
 

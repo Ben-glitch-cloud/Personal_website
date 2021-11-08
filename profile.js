@@ -1,12 +1,20 @@
 "use strict"; 
 
+window.addEventListener('resize', function(){
+    console.log(window.innerWidth)
+})
+
+
 document.addEventListener('scroll', function(){
-    if(scrollY >= 377)
+    if(scrollY >= 390)
     {
-        document.getElementById('second_nav').style.display = 'flex'
-    } else if(scrollY < 377)
+        document.getElementById('second_nav').style.display = 'flex' 
+        document.getElementById('second_nav_bar').style.display = 'block'
+
+    } else if(scrollY < 390)
     {
-        document.getElementById('second_nav').style.display = 'none'
+        document.getElementById('second_nav').style.display = 'none' 
+        document.getElementById('second_nav_bar').style.display = 'none'
     }
 })
 
@@ -71,4 +79,11 @@ document.getElementById('nav_hobbies_2').addEventListener('click', function(){
     document.querySelector('.hobbies').scrollIntoView({
         behavior: 'smooth'
     })
+}) 
+
+
+
+document.addEventListener('scroll', function(){ 
+    let length = scrollY / 34.00
+    document.getElementById('second_nav_bar').style.width = `${length}%`
 })

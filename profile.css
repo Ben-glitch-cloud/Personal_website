@@ -158,7 +158,6 @@ nav ul li {
 
 #rac {
     width: 230px;
-    
 }
 
 
@@ -245,7 +244,12 @@ nav ul li {
     height: 30px; 
     margin-top: 120px;
 
-}  
+}   
+
+#IMG 
+{
+    width: 240px;
+}
 
 #surrey {
     width: 230px;

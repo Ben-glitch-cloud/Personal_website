@@ -1,8 +1,8 @@
 "use strict"; 
 
-window.addEventListener('resize', function(){
-    console.log(window.innerWidth)
-})
+// window.addEventListener('resize', function(){
+//     console.log(window.innerWidth)
+// })
 
 
 document.addEventListener('scroll', function(){
@@ -83,7 +83,7 @@ document.getElementById('nav_hobbies_2').addEventListener('click', function(){
 
 
 
-document.addEventListener('scroll', function(){ 
-    let length = scrollY / 34.00
+document.addEventListener('scroll', function(){  
+    let length = scrollY / 36
     document.getElementById('second_nav_bar').style.width = `${length}%`
 })

@@ -1,8 +1,11 @@
 "use strict"; 
 
-// window.addEventListener('resize', function(){
+alert("This website does not support small screens at the moment.") 
+
+// This will be added to later addications
+// window.addEventListener('resize', function(event){ 
 //     console.log(window.innerWidth)
-// })
+// }, true)
 
 
 document.addEventListener('scroll', function(){

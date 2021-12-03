@@ -1,6 +1,6 @@
 "use strict"; 
 
-alert("This website does not support small screens at the moment.") 
+// alert("This website does not support Smartphone devices, I'm currenty working on it.") 
 
 // This will be added to later addications
 // window.addEventListener('resize', function(event){ 
@@ -86,7 +86,9 @@ document.getElementById('nav_hobbies_2').addEventListener('click', function(){
 
 
 
-document.addEventListener('scroll', function(){  
-    let length = scrollY / 36
+document.addEventListener('scroll', function(){   
+
+    let newHight = (document.body.scrollHeight - 690) / 100 
+    let length = scrollY / newHight
     document.getElementById('second_nav_bar').style.width = `${length}%`
 })

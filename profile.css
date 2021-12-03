@@ -116,7 +116,12 @@ nav ul li {
     position: fixed;
     display: block;
     top: 85px;
-}
+} 
+
+
+/* @media screen and (max-width: 800px) { 
+   
+} */
 
 /* Main page of content  */ 
 
@@ -139,25 +144,58 @@ nav ul li {
 .main_profile {
     display: flex;
     justify-content: center; 
-    align-items: center;   
-    margin-top: 50px; 
+    align-items: center;    
+    flex-direction: row;
+    margin-top: 80px; 
     width: 100%;
-} 
+}  
 
-.main_profile p { 
-    width: 55%;
+.main_profile_item
+{
+    margin: 0 20px;
+}
+
+.main_profile_item_one p { 
     text-align: justify; 
     font-family: 'Source Sans Pro', sans-serif;  
-    line-height: 25px; 
+    line-height: 25px;   
+    margin: 0 20px; 
+    width: 500px;
 }   
 
-.main_profile img {
-    width: 14%; 
-    margin-right: 50px;
+.profile_image {
+    width: 300px;
 } 
 
 #rac {
     width: 230px;
+} 
+
+@media screen and (max-width: 980px) {
+    .main_profile  
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+        margin-top: 50px; 
+        width: 100%; 
+        flex-direction: column;
+    } 
+
+    .main_profile_item
+    {
+        margin: 0px 0px 30px 0px; 
+    }
+
+    .main_profile_item_one p 
+    { 
+        text-align: justify; 
+        font-family: 'Source Sans Pro', sans-serif;  
+        line-height: 25px;   
+        margin: 25px 0px; 
+        width: 400px;
+    }   
+
 }
 
 
@@ -165,7 +203,7 @@ nav ul li {
 
 .More_info { 
     width: 96%; 
-    height: 60px;
+    height: 120px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -191,7 +229,8 @@ nav ul li {
 #soical_link:hover {
     color: pink; 
     text-decoration: none;
-}
+} 
+
 
 /* work  */
 
@@ -232,7 +271,26 @@ nav ul li {
     width: 500px;
     text-align: justify; 
     font-family: 'Source Sans Pro', sans-serif; 
-} 
+}  
+
+@media screen and (max-width: 980px) {
+    .work_area
+    {
+        display: flex;  
+        width: 100%;
+        justify-content: space-evenly; 
+        flex-direction: row; 
+        flex-wrap: wrap;  
+        margin-top: 30px; 
+        align-items: center; 
+        padding: 0 0;
+    } 
+
+    .work_item_one
+    {
+        margin: 0 20px;
+    }
+}
 
 /* Work Eduation  */ 
 
@@ -284,7 +342,22 @@ nav ul li {
     height: 240px;
 } 
 
-
+@media screen and (max-width: 980px) {
+    .Education_area
+    {
+    width: 100%;
+    display: flex; 
+    margin-top: 40px;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+    align-items: center; 
+    flex-direction: row;
+    } 
+    .Education_item_one 
+    {
+        margin: 0px 15px;
+    }
+}
 
 /* Projects header  */
 
@@ -308,7 +381,8 @@ nav ul li {
 
 .Coding_Projects {
     width: 100%; 
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
     margin-top: 60px; 
     margin-bottom: 40px;
     justify-content: space-evenly;  
@@ -373,7 +447,8 @@ nav ul li {
 .item_three p {
     width: 200px; 
     text-align: center;
-}
+} 
+
 
 /* hobbies  */  
 
@@ -381,7 +456,7 @@ nav ul li {
     width: 100%; 
     display: flex; 
     height: 30px;  
-    margin-top: 100px; 
+    margin-top: 100px;  
     justify-content: center;
     align-items: center; 
     font-family: 'Source Sans Pro', sans-serif;
@@ -442,4 +517,13 @@ nav ul li {
 
 #soical:hover {
     color: white;
+}
+
+@media screen and (max-width: 980px) {
+    .end 
+    { 
+        height: 130px;
+        flex-direction: column; 
+        align-items: center;
+    }
 }

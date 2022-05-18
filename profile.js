@@ -1,12 +1,5 @@
 "use strict"; 
 
-// alert("This website does not support Smartphone devices, I'm currenty working on it.") 
-
-// This will be added to later addications
-// window.addEventListener('resize', function(event){ 
-//     console.log(window.innerWidth)
-// }, true)
-
 
 document.addEventListener('scroll', function(){
     if(scrollY >= 390)

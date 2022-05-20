@@ -48,10 +48,9 @@ header p {
     margin: 0px; 
     padding: 0px; 
     animation-name: sideHeader; 
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 } 
-
-
 
 /* nav bar in here */ 
 
@@ -120,7 +119,8 @@ nav ul li {
 
 #second_nav 
 {
-    width: 100%; 
+    width: 100%;  
+    z-index: 1;
     height: 90px;
     display: none; 
     position: fixed; 
@@ -143,7 +143,8 @@ nav ul li {
 
 #second_nav_bar 
 {
-    background-color: pink; 
+    background-color: pink;  
+    z-index: 2;
     width: 0%;
     height: 5px; 
     position: fixed;
@@ -158,7 +159,26 @@ nav ul li {
 
 /* Main page of content  */ 
 
-/* work expresses */ 
+/* work expresses */  
+
+
+@keyframes Profile_fadeIn {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    40%{opacity: 0.4;}
+    60%{opacity: 0.6;}
+    80%{opacity: 0.8;}
+    100%{opacity: 1;}
+}
+
+@keyframes Profile_fadeOut {
+    0%{opacity: 1;}
+    20%{opacity: 0.8;}
+    40%{opacity: 0.6;}
+    60%{opacity: 0.4;}
+    80%{opacity: 0.2;}
+    100%{opacity: 0.0;}
+}
 
 .Profile_header {
     display: flex;
@@ -166,22 +186,26 @@ nav ul li {
     align-items: center;  
     width: 100%;
     height: 30px;  
+    position: relative;
 } 
 
 .Profile_header h2 {
-    font-size: 30px; 
-    letter-spacing: 4px;  
+    font-size: 30px;  
+    letter-spacing: 4px;   
     font-family: 'Source Sans Pro', sans-serif; 
-}
+} 
 
-.main_profile {
+#main_profile {
     display: flex;
     justify-content: center; 
     align-items: center;    
     flex-direction: row;
     margin-top: 80px; 
-    width: 100%;
-}  
+    width: 100%;  
+    opacity: 0;  
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+}    
 
 .main_profile_item
 {
@@ -205,7 +229,7 @@ nav ul li {
 } 
 
 @media screen and (max-width: 980px) {
-    .main_profile  
+    #main_profile  
     {
         display: flex;
         justify-content: center; 
@@ -305,6 +329,56 @@ nav ul li {
     text-align: justify; 
     font-family: 'Source Sans Pro', sans-serif; 
 }  
+ 
+/* animation work area */   
+
+
+
+@keyframes WorkFadeIn {
+    0%{opacity: 0; left: 100px;}
+    20%{opacity: 0.2; left: 80px;}
+    40%{opacity: 0.4; left: 60px;}
+    60%{opacity: 0.6; left: 40px;}
+    80%{opacity: 0.8; left: 20px;}
+    100%{opacity: 1; left: 0px;}
+} 
+
+@keyframes WorkFadeOut {
+    0%{opacity: 1; left: 0px;}
+    20%{opacity: 0.8; left: 20px;}
+    40%{opacity: 0.6; left: 40px;}
+    60%{opacity: 0.4; left: 60px;}
+    80%{opacity: 0.2; left: 80px;}
+    100%{opacity: 0; left: 100px;}
+}
+
+#work_area_one{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+    left: 0px; 
+    position: relative;
+} 
+
+#work_area_two{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+    left: 0px; 
+    position: relative;
+} 
+
+#work_area_three{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+    left: 0px; 
+    position: relative;
+}
+
+#work_area_four{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+    left: 0px; 
+    position: relative;
+}
 
 @media screen and (max-width: 980px) {
     .work_area
@@ -325,7 +399,37 @@ nav ul li {
     }
 }
 
-/* Work Eduation  */ 
+/* Work Eduation  */  
+
+/* Education Animation */  
+
+@keyframes EducationFadeIn {
+    0%{opacity: 0; left: 100px;}
+    20%{opacity: 0.2; left: 80px;}
+    40%{opacity: 0.4; left: 60px;}
+    60%{opacity: 0.6; left: 40px;}
+    80%{opacity: 0.8; left: 20px;}
+    100%{opacity: 1; left: 0px;}
+} 
+
+@keyframes EducationFadeOut {
+    0%{opacity: 1; left: 0px;}
+    20%{opacity: 0.8; left: 20px;}
+    40%{opacity: 0.6; left: 40px;}
+    60%{opacity: 0.4; left: 60px;}
+    80%{opacity: 0.2; left: 80px;}
+    100%{opacity: 0; left: 100px;}
+}
+
+#Education_area_one{
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+} 
+
+#Education_area_two{
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+}
 
 .Education_header{
     display: flex;
@@ -480,8 +584,41 @@ nav ul li {
 .item_three p {
     width: 200px; 
     text-align: center;
+}  
+
+
+@keyframes ProjectFadeIn {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    40%{opacity: 0.4;}
+    60%{opacity: 0.6;}
+    80%{opacity: 0.8;}
+    100%{opacity: 1;}
+}
+
+@keyframes ProjectFadeOut {
+    0%{opacity: 1; }
+    20%{opacity: 0.8;}
+    40%{opacity: 0.6;}
+    60%{opacity: 0.4;}
+    80%{opacity: 0.2;}
+    100%{opacity: 0;}
+}
+ 
+#project_one{
+    animation-duration: 2s; 
+    animation-timing-function: linear; 
 } 
 
+#projects_two{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+}
+ 
+#projects_three{
+    animation-duration: 2s;
+    animation-timing-function: linear; 
+}
 
 /* hobbies  */  
 

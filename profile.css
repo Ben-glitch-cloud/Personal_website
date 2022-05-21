@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* header of my personal website  */
@@ -314,12 +315,12 @@ nav ul li {
 
 .work_area {
     display: flex;  
-    width: 100%;
+    width: 100%; 
     justify-content: space-evenly; 
     flex-direction: row; 
     flex-wrap: nowrap;  
     margin-top: 40px; 
-   align-items: center;
+   align-items: center; 
 }   
 
 .work_item_one p {
@@ -359,7 +360,7 @@ nav ul li {
     animation-duration: 2s;
     animation-timing-function: linear; 
     left: 0px; 
-    position: relative;
+    position: relative; 
 } 
 
 #work_area_two{

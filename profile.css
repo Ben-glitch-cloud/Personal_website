@@ -60,7 +60,8 @@ nav {
     display: flex; 
     justify-content: center;
     align-items: center; 
-    margin-bottom: 190px;
+    margin-bottom: 190px; 
+    z-index: 1;
 } 
 
 nav ul li {
@@ -129,7 +130,7 @@ nav ul li {
     margin: 0px 0px;
     padding: 0px 0px;
     justify-content: center;
-    align-items: center;  
+    align-items: center;   
 } 
 
 #second_nav ul li {
@@ -138,7 +139,8 @@ nav ul li {
     padding: 0 10px; 
     margin: 0 10px; 
     font-family: 'Source Sans Pro', sans-serif;  
-    letter-spacing: 2px;
+    letter-spacing: 2px; 
+    z-index: 1;
 } 
 
 #second_nav_bar 
@@ -204,7 +206,8 @@ nav ul li {
     width: 100%;  
     opacity: 0;  
     animation-duration: 1s; 
-    animation-timing-function: linear;
+    animation-timing-function: linear; 
+    z-index: 0;
 }    
 
 .main_profile_item
